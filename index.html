@@ -44,20 +44,22 @@
 
     <main>
         <div class="google-img">
-            <img src="./assets/imgs/google.png" alt="">
+            <img src="./assets/imgs/google.png">
         </div>
 
-        <div class="input-div">
-            <img src="./assets/imgs/focus.svg">
-            <input type="text">
-            <img src="./assets/imgs/mic.svg" height="25px" width="25px" class="curser">
-            <img src="./assets/imgs/lens.png" height="25px" width="25px" class="curser">
-        </div>
+        <form action="https://www.google.com/search" method="GET">
+            <div class="input-div">
+                <img src="./assets/imgs/focus.svg" alt="Search Icon">
+                <input type="text" name="q" placeholder="Search Google..." required>
+                <img src="./assets/imgs/mic.svg" height="25px" width="25px" class="curser" alt="Mic Icon">
+                <img src="./assets/imgs/lens.png" height="25px" width="25px" class="curser" alt="Lens Icon">
+            </div>
 
-        <div class="buttons">
-            <a href=""><button>Google Search</button></a>
-            <a href="https://doodles.google/" target="_blank"><button>I'm Feeling Lucky</button></a>
-        </div>
+            <div class="buttons">
+                <button type="submit">Google Search</button>
+                <a href="https://doodles.google/" target="_blank"><button type="button">I'm Feeling Lucky</button></a>
+            </div>
+        </form>
 
         <div class="languages">
             <span>Google offered in: </span>
@@ -113,6 +115,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
