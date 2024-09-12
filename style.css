@@ -110,6 +110,36 @@ input:focus {
     outline: none;
 }
 
+/* For Chrome, Safari, Edge, Opera autofill */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #202124 inset !important;
+    box-shadow: 0 0 0 1000px #202124 inset !important;
+    -webkit-text-fill-color: #e8eaed !important;
+    color: #e8eaed !important;
+}
+
+/* Hovering over input that has been autofilled */
+.input-div:hover input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #303134 inset !important;
+    box-shadow: 0 0 0 1000px #303134 inset !important;
+    -webkit-text-fill-color: #e8eaed !important;
+    color: #e8eaed !important;
+}
+
+/* For Firefox */
+input:-moz-autofill {
+    background-color: #202124 !important;
+    color: #e8eaed !important;
+    box-shadow: 0 0 0 1000px #202124 inset !important;
+}
+
+/* For Internet Explorer */
+input:-ms-autofill {
+    background-color: #202124 !important;
+    color: #e8eaed !important;
+    box-shadow: 0 0 0 1000px #202124 inset !important;
+}
+
 .curser {
     cursor: pointer;
     padding-right: 5px;
@@ -244,6 +274,11 @@ footer {
 @media (max-width: 768px) {
     nav a {
         font-size: 12px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+        padding-left: 8px;
     }
 
     .google-img img {
